@@ -1,0 +1,27 @@
+name:               rot13
+version:            0.1.0.0
+synopsis:           Fast ROT13 cipher for Haskell.
+description:
+                    A fast ROT13 cipher for Haskell implemented using as few branches as possible.
+
+                    For information on ROT13, see: https://en.wikipedia.org/wiki/ROT13
+
+
+homepage:           https://github.com/kvanberendonck/rot13
+license:            SD3
+license-file:       LICENSE
+author:             Kyle Van Berendonck
+maintainer:         kvanberendonck@gmail.com
+-- copyright:
+category:           Codec
+build-type:         Simple
+cabal-version:      >=1.10
+
+library
+  exposed-modules:
+    Codec.Rot13
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.6 && <4.9
+  hs-source-dirs:      src
+  default-language:    Haskell2010
