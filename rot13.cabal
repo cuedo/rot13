@@ -1,5 +1,5 @@
 name:                 rot13
-version:              0.1.0.0
+version:              0.1.0.1
 synopsis:             Fast ROT13 cipher for Haskell.
 description:
                       A fast ROT13 cipher for Haskell implemented using as few branches as possible.
