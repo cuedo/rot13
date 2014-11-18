@@ -7,7 +7,7 @@ description:
                       For more information on ROT13, see: <https://en.wikipedia.org/wiki/ROT13>
 
 homepage:             https://github.com/kvanberendonck/rot13
-license:              SD3
+license:              BSD3
 license-file:         LICENSE
 author:               Kyle Van Berendonck
 maintainer:           kvanberendonck@gmail.com
