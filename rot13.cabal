@@ -1,12 +1,12 @@
 name:                 rot13
-version:              0.1.0.1
+version:              0.1.0.2
 synopsis:             Fast ROT13 cipher for Haskell.
 description:
                       A fast ROT13 cipher for Haskell implemented using as few branches as possible.
 
                       For more information on ROT13, see: <https://en.wikipedia.org/wiki/ROT13>
 
-homepage:             https://github.com/kvanberendonck/rot13
+homepage:             https://github.com/kvanberendonck/codec-rot13
 license:              BSD3
 license-file:         LICENSE
 author:               Kyle Van Berendonck
