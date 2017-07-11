@@ -33,5 +33,7 @@ test-suite spec
   build-depends:
     base == 4.*,
     hspec >= 1.3,
+    bytestring,
+    text,
     QuickCheck,
     rot13

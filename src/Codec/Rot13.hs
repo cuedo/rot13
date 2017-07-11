@@ -60,8 +60,8 @@ class Rot13Bytes a where
 -- | Perform the ROT13 cipher on the given 'Integral' instance (in the sense of 'Rot13').
 rot13int :: Integral a => a -> a
 rot13int x
-  | x - 97 < 26 = 97 + rem (x - 84) 26
-  | x - 65 < 26 = 65 + rem (x - 52) 26
+  | (fromIntegral x :: Word) - 97 < 26 = 97 + rem (x - 84) 26
+  | (fromIntegral x :: Word) - 65 < 26 = 65 + rem (x - 52) 26
   | otherwise   = x
 {-# INLINE rot13int #-}
 {-# SPECIALIZE rot13int :: Word -> Word #-}
@@ -91,7 +91,7 @@ rot13int x
 -- | Perform the ROT13 cipher on the given 'Enum' instance (in the sense of 'Rot13').
 {-# INLINE rot13enum #-}
 rot13enum :: Enum a => a -> a
-rot13enum = toEnum . rot13int . fromEnum
+rot13enum = toEnum . (rot13int :: Int -> Int) . fromEnum
 
 -- | Perform the ROT13 cipher on the given 'Storable' instance bytes to yield a 'BS.ByteString'.
 {-# INLINE rot13stor #-}
